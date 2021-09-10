@@ -8,13 +8,43 @@
         <title>API</title>
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
         <link rel="stylesheet" href="style.css">
+        <script src="../../../../../../tmp/apiExerciceChuckNorris/apiExercice/main.js"></script>
+
 </head>
 <body>
 
-        <h1 class="display-4">Coucou</h1>
+        <h1 class="display-4 text-center mt-5">Chuck Norris Jokes</h1>
+
+        <div class="container mt-5">
+                <div class="row justify-content-center flex-column m-auto">
+                        <div class="col text-center">
+                                <button id="jokebtn" class="btn btn-outline-info ">🤣</button>
+                        </div>
+                        <div class="col text-center mt-5">
+                                <h3 id="showJokes" class="display-6"></h3>
+                        </div>
+                        <div class="col text-center mt-5" >
+                                <button class="btn btn-outline-success" id="jokeSbtn">🤣🤣🤣🤣🤣</button>
+                                <div id="showFiveJokes">
+                                
+                                </div>
+                        </div>
+                        <div class="col-7 text-center mt-5">
+                                        <label for="askCat">Saisissez la catégorie de joke que vous souhaitez-lire</label>
+                                        <input type="text" name="askCat" id="askCat" class="form-control">
+                                <button class="btn btn-outline-warning" id="askCatJokeBtn">🤣</button>
+                        </div>
+                </div>
+                
+                <div class="row text-center m-auto">
+                        <h3 class="display-6">Joke par catégorie</h3>
+                        <div  id="divCat"></div>
+                </div>
+        </div>
 
 
-        <script src="main.js"></script>
+  
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+        <script src="main.js"></script>
 </body>
 </html>
